@@ -86,3 +86,41 @@ document.querySelector(".card").addEventListener("mouseenter", function () {
 document.querySelector(".card").addEventListener("mouseleave", function () {
   this.style.boxShadow = "0 20px 40px rgba(0,0,0,0.1)";
 });
+
+// Create sparkles
+function createSparkles() {
+  const body = document.body;
+  const sparkleCount = 20;
+  
+  for (let i = 0; i < sparkleCount; i++) {
+    const sparkle = document.createElement('div');
+    sparkle.className = 'sparkle';
+    
+    // Random positions
+    const x = Math.random() * 100;
+    const y = Math.random() * 100;
+    
+    // Random size
+    const size = Math.random() * 8 + 2;
+    
+    // Random colors for variety
+    const colors = ['#FFD700', '#FFFFFF', '#FFC0CB', '#ADD8E6', '#E6E6FA'];
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    
+    // Random animation delay
+    const delay = Math.random() * 5;
+    
+    // Apply styles
+    sparkle.style.left = `${x}%`;
+    sparkle.style.top = `${y}%`;
+    sparkle.style.width = `${size}px`;
+    sparkle.style.height = `${size}px`;
+    sparkle.style.boxShadow = `0 0 ${size/2}px ${size/4}px ${color}`;
+    sparkle.style.animationDelay = `${delay}s`;
+    
+    body.appendChild(sparkle);
+  }
+}
+
+// Call the function when the page loads
+createSparkles();
