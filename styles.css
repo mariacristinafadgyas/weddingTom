@@ -7,12 +7,12 @@
 }
 
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #323538 50%, #faaa90 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Roboto", system-ui, sans-serif;
     padding: 20px;
     position: relative;
     overflow: hidden;
@@ -42,7 +42,7 @@ body::before {
 .card {
     width: 420px;
     height: 520px;
-    background: rgba(255, 255, 255, 0.95);
+    background: #cff7d4;
     backdrop-filter: blur(20px);
     border-radius: 24px;
     box-shadow:
@@ -50,7 +50,7 @@ body::before {
         0 0 0 1px rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
-    cursor: pointer;
+    cursor: grabbing;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform-style: preserve-3d;
 }
@@ -104,8 +104,8 @@ body::before {
     align-items: center;
     padding: 40px 30px;
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(50deg, #323538 40%, #c8fabb 100%);
+    color: black;
     position: relative;
     overflow: hidden;
 }
@@ -147,10 +147,10 @@ body::before {
 }
 
 .main-text {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", "Roboto", system-ui, sans-serif;
     font-size: 36px;
     font-weight: 600;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #efa790, #3a3e3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -168,7 +168,7 @@ body::before {
 }
 
 .funny-text strong {
-    color: #667eea;
+    color: #faaa90;
     font-weight: 600;
 }
 
@@ -261,13 +261,14 @@ body::before {
 }
 
 .back-message {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", "Roboto", system-ui, sans-serif;
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 24px;
     letter-spacing: -0.01em;
     position: relative;
     z-index: 1;
+    color: #fab46a;
 }
 
 .back-text {
@@ -286,10 +287,10 @@ body::before {
 }
 
 .wedding-rings {
-    font-size: 64px;
-    margin-bottom: 24px;
+    font-size: 50px;
+    margin-bottom: 20px;
     animation: elegantSpin 6s ease-in-out infinite;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(#f9d7c2);
     position: relative;
     z-index: 1;
 }
@@ -323,6 +324,7 @@ body::before {
     margin-bottom: 12px;
     opacity: 0.9;
     font-style: italic;
+    color: #fecc98;
 }
 
 .signature-names {
@@ -332,6 +334,7 @@ body::before {
     line-height: 1.6;
     opacity: 0.95;
     letter-spacing: 0.02em;
+    color: #fecc98;
 }
 
 /* Modern touch interactions */
