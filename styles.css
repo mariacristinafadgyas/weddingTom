@@ -366,6 +366,10 @@ body::before {
     animation: sparkleAnimation 2.5s ease-in-out infinite;
 }
 
+.gemstone {
+    padding: 10px;
+}
+
 @keyframes sparkleAnimation {
 0%, 100% { 
     opacity: 0; 
