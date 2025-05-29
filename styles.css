@@ -310,6 +310,30 @@ body::before {
     }
 }
 
+.signatures {
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.signature-header {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.signature-names {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    opacity: 0.95;
+    letter-spacing: 0.02em;
+}
+
 /* Modern touch interactions */
 @media (hover: hover) {
     .card:hover .funny-couple {
