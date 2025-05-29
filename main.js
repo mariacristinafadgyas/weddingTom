@@ -124,3 +124,26 @@ function createSparkles() {
 
 // Call the function when the page loads
 createSparkles();
+
+// Add peach trail effect on card hover
+const card = document.querySelector(".card");
+card.addEventListener("mousemove", (e) => {
+    if (Math.random() > 0.2) return;
+
+    const peach = document.createElement("div");
+    peach.className = "trail-peach";
+    peach.textContent = "🍑";
+    peach.style.left = `${e.clientX}px`;
+    peach.style.top = `${e.clientY}px`;
+
+    document.body.appendChild(peach);
+
+    // Remove heart after animation completes
+    setTimeout(() => peach.remove(), 700);
+});
+
+// Clean up hearts when leaving the card
+card.addEventListener("mouseleave", () => {
+    const peaches = document.querySelectorAll(".trail-peach");
+    peaches.forEach(peach => peach.remove());
+});
