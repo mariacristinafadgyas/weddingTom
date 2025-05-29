@@ -40,12 +40,52 @@
                 <div class="signatures">
                     <div class="signature-header">With warmest wishes:</div>
                     <div class="signature-names">
-                        Mayer • Varsha • Maria Fe<br />
-                        Maria • Lydia • Elis • Polina
+                        <span class="signature-name" data-person="mayer"
+                            >Mayer</span
+                        >
+                        •
+                        <span class="signature-name" data-person="varsha"
+                            >Varsha</span
+                        >
+                        •
+                        <span class="signature-name" data-person="mariafe"
+                            >Maria Fe</span
+                        ><br />
+                        <span class="signature-name" data-person="maria"
+                            >Maria</span
+                        >
+                        •
+                        <span class="signature-name" data-person="lydia"
+                            >Lydia</span
+                        >
+                        •
+                        <span class="signature-name" data-person="elis"
+                            >Elis</span
+                        >
+                        •
+                        <span class="signature-name" data-person="polina"
+                            >Polina</span
+                        >
+                        •
+                        <span class="signature-name" data-person="polina"
+                            >Lais</span
+                        >
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Personal Messages Modal -->
+        <div class="message-modal" id="messageModal">
+            <div class="message-content">
+                <button class="close-btn" onclick="closeMessage()">
+                    &times;
+                </button>
+                <div class="message-author" id="messageAuthor"></div>
+                <div class="message-text" id="messageText"></div>
+            </div>
+        </div>
+
         <script src="main.js"></script>
     </body>
 </html>
