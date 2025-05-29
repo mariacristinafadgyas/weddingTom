@@ -2,6 +2,7 @@
 const personalMessages = {
   maria: "Wishing you both love and happiness on your special journey! 🌸",
   lydia: "Wishing you peace, love, and a lifetime of shared dreams! 🌟",
+  elis: "'she wants me to write a love poem but I think if people can’t love each other’s assholes and farts and shits and terrible parts just like they love the good parts, that ain’t complete love'. ― Charles Bukowski, On LOve .... 🍓 so i wish you a complete love and fun together, my dears ;)",
 };
 
 function flipCard() {
